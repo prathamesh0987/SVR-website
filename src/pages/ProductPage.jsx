@@ -19,7 +19,12 @@ const ProductPage = () =>(
         <div className={`${styles.boxWidth}`}>
             <h1 className='flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px] text-center'> Our Products</h1>
             <div style={styles.container}>
-            {products.map((card) => <ProductCard key={card.id} {...card} />)}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {products.map((card) => (
+            <ProductCard key={card.id} {...card} />
+          ))}
+        </div>
+           
     </div>
         </div>
         

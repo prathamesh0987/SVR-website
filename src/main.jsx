@@ -9,6 +9,8 @@ import {
 import About from './pages/About.jsx';
 import ProductPage from './pages/ProductPage.jsx';
 import ResearchPage from './pages/ResearchPage.jsx';
+import EventsPage from './pages/EventsPage.jsx';
+import ContactUs from './pages/ContactUs.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
   {
     path: "research",
     element: <ResearchPage/>,
+  },
+  {
+    path: "events",
+    element: <EventsPage/>,
+  },
+  {
+    path: "contact us",
+    element: <ContactUs/>,
   },
 ]);
 

@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star,frs,arm_402,fms,plckit  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star,frs,arm_402,fms,plckit,roc, aicte_training,img_1,img_2,img_3,img_4,img_5,img_6,img_7,img_8,nafed_1,nafed_2,nafed_3,nafed_4,nafed_5,nafed_2019_1,nafed_2019_2,nafed_2019_3,nafed_2019_4,nafed_2019_5} from "../assets";
 
 export const navLinks = [
   {
@@ -18,21 +18,18 @@ export const navLinks = [
     title: "Research",
   },
   {
-    id: "training",
-    title: "Training",
-  },
-  {
     id: "events",
     title: "Events",
   },
   {
-    id: "careers",
-    title: "Careers",
+    id: "contact us",
+    title: "Contact Us",
   },
   {
     id: "downloads",
     title: "Downloads",
   },
+  
 
 
 ];
@@ -161,11 +158,11 @@ export const footerLinks = [
     title: "Partner",
     links: [
       {
-        name: "Our Partner",
+        name: "RoboAnalyzer",
         link: "https://www.hoobank.com/our-partner/",
       },
       {
-        name: "Become a Partner",
+        name: "Feast",
         link: "https://www.hoobank.com/become-a-partner/",
       },
     ],
@@ -269,3 +266,111 @@ export const products = [
     img: arm_402,
   },
 ];
+
+
+export const papers = [
+  {
+    authors: "Pankaj Pandit, Shreyash Gajlekar, Viinod Atpadkar & Dr. Debanik Roy",
+    title: "On the Design & Vibration Analysis of a Three-Link Flexible Robot Interfaced with a Mini-Gripper",
+    conference: "8th National Conference on Wave Mechanics and Vibrations, NIT Rourkela",
+    year: 2018
+  },
+  {
+    authors: "Pankaj Pandit, Pratik Chothe, Viinod Atpadkar & Dr. Debanik Roy",
+    title: "Design, Dynamic Simulation & Test-run of the Indigenous Controller of a Multi-Gripper Revolute Robot by Minimizing System Trembling",
+    conference: "8th National Conference on Wave Mechanics and Vibrations, NIT Rourkela",
+    year: 2018
+  },
+  {
+    authors: "Dr. Debanik Roy",
+    title: "Control of Inherent Vibration of Flexible Robotic Systems and Associated Dynamics",
+    conference: "8th National Conference on Wave Mechanics and Vibrations, NIT Rourkela",
+    year: 2018
+  },
+  {
+    authors: "Pankaj Pandit, Aditya Rauniyar, Viinod Atpadkar & Dr. Debanik Roy",
+    title: "Design Model for the Drive & Actuator of the Test Set-Up of a Novel Flexible Robotic System",
+    conference: "IEEE International Conference",
+    year: 2018
+  },
+  {
+    authors: "Pratik Chothe, Viinod Atpadkar, Debanik Roy, Pankaj Pandit, Amit Kumar Deka, Shreyash Gajlekar, Akshay Dalvi, Khushaldas Badhan",
+    title: "Study of Real-Time Vibration and Hardware Implementation of Serial-Link Flexible Robot with Gripper",
+    conference: "14th International Conference on Vibration Problems, Crete, Greece",
+    year: null
+  },
+  {
+    authors: "Shreyash Gajlekar, Viinod Atpadkar, Debanik Roy, Akshay Dalvi, Vibhavari Nirmale, Jaipal Solanki, Pankaj Pandit, Pratik Chothe, Amit Kumar Deka",
+    title: "An Insight to Vibration Attenuation through Robust Control System Hardware for Flexible Robots",
+    conference: "14th International Conference on Vibration Problems, Crete, Greece",
+    year: null
+  },
+  {
+    authors: "Shreyash Gajlekar, Debanik Roy, Viinod Atpadkar, Amit Kumar Deka, Pankaj Pandit, Akshay Dalvi, Pratik Chothe, Khushaldas Badhan, Vinaya Patil",
+    title: "Development of Control Algorithm & Joint Navigation of Multi-Degrees-of-Freedom Flexible Robotic System with Vibration Signature",
+    conference: "14th International Conference on Vibration Problems, Crete, Greece",
+    year: null
+  },
+  {
+    authors: "Shubham K. Chaudhari, Aniket H. Bhelsaikar & Prof. Swapnil Lokhande",
+    title: "Structural Analysis of Crane Hook",
+    conference: "NAFED 2017 VSSC/ISRO Bangalore, Users Meet",
+    year: 2017
+  },
+  {
+    authors: "Shubham K. Chaudhari, Aniket H. Bhelsaikar & Prof. Rajaram M. Shinde",
+    title: "Buckling Analysis of Connecting Rod",
+    conference: "NAFED 2017 VSSC/ISRO Bangalore, Users Meet",
+    year: 2017
+  },
+  {
+    authors: "Shubham K. Chaudhari, Aniket H. Bhelsaikar & Viinod Atpadkar",
+    title: "Thermo Mechanical Analysis of Piston",
+    conference: "NAFED 2017 VSSC/ISRO Bangalore, Users Meet",
+    year: 2017
+  },
+  {
+    authors: "Shubham K. Chaudhari, Aniket H. Bhelsaikar & Viinod Atpadkar",
+    title: "Thermal Analysis of Fin & Tube Type Heat Exchanger",
+    conference: "NAFED 2017 VSSC/ISRO Bangalore, Users Meet",
+    year: 2017
+  }
+];
+
+
+export const events = [
+  {
+    title: 'RoboAnalyzer ROC 2024',
+    description: 'Sinhgad College Pune',
+    images: [roc,roc], // Add as many images as needed
+  },
+  {
+    title: 'AICTE Training',
+    description: "Khushaldas Badhan delivered as session on 'Applications of Robotics in Nuclear, Defence, Security & Space Science Fields.",
+    images: [aicte_training,aicte_training],
+  },
+  {
+    title: 'Nafed 2019',
+    description: "Nafed 2019 Developer's & User's Meet, Mumbai",
+    images: [nafed_2019_1,nafed_2019_2,nafed_2019_3,nafed_2019_4,nafed_2019_5],
+  },
+  {
+    title: 'Nafed 2018',
+    description: "Nafed 2018 Developer's and User's Meet At Panimalar College, Chennai",
+    images: [nafed_1,nafed_2,nafed_3,nafed_4,nafed_5],
+  },
+  {
+    title: 'JJ Magdum callege of engineering Jaysingpur: Robotics Workshop',
+    description: 'SVR Robotics conducted two days workshop at J.J Magdum callege of engineering Jaysingpur. This two days workshop mainly focused on Basics of robotics and giving some hands on experience to students where student got to learn lots of things like different types of sensor and their real time applications, Basics of Robot kinematics & its real time implementation, Students were able to assemble the robot kits provided by SVR based on the knowledge they gained in workshop. In this two days workshop, 1st day was on Basics theory and assembly of Line follower robot, Biped robot etc, Student got some basic information about PCB design and its software, Mechanical CAD modelling software, Different FEA software, 2nd day was based on the Basics of robot kinematics and its real time implementation in scara Kit',
+    images: [img_2,img_3,img_4,img_5,img_6,img_7,img_8],
+  },
+  {
+    title: 'Jorhat Institute of science and technology Jorhat Assam: Robotics Workshop',
+    description: 'SVR Robotics conducted two days workshop at Jorhat institute of science and technology Jorhat Assam in collaborations with CDAC Kolkata. This two days workshop was on Basics of robotics. Student got to learn lot of things on robotics and also some real time working .',
+    images: [img_1,img_1],
+  },
+  // Add more events as needed
+];
+
+
+
