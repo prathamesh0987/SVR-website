@@ -1,7 +1,7 @@
 import { apple, bill,fms,google } from "../assets"
 import styles, {layout} from "../style"
 
-const Billing = () => (
+const Billing = ({darkMode}) => (
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
       <img src={fms} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
@@ -13,10 +13,10 @@ const Billing = () => (
     </div>
 
     <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
+      <h2 className={`${styles.heading2 } ${darkMode ? 'bg-primary text-white' : 'bg-lightPrimary text-black'}`}>
       Easily optimize your <br className="sm:block hidden"/>Robotics Lab and Infrastructure.
       </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+      <p className={`${styles.paragraph} ${darkMode ? 'bg-primary text-white' : 'bg-lightPrimary text-black'} max-w-[470px] mt-5`}>
       Elevate your robotics lab to new heights—embrace efficiency, enhance collaboration, and drive innovation with our easy-to-implement optimization strategies.
       </p>
 

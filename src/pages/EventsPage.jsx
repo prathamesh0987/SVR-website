@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
 import Slider from 'react-slick'; // Carousel library
 import styles from '../style';
 import { Navbar } from '../components';
@@ -41,19 +42,21 @@ const EventCard = ({ images, title, description, isReversed }) => {
   );
 };
 
-const EventsPage = () => (
-  <div className="bg-primary w-full overflow-hidden">
-    {/* Navbar */}
+const EventsPage = () => {
+  const { darkMode, toggleTheme } = useContext(ThemeContext);
+  return (
+  
+    <div className={`${darkMode ? 'bg-primary' : 'bg-lightPrimary'} w-full overflow-hidden`}>
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Navbar />
+        <Navbar toggleTheme={toggleTheme} darkMode={darkMode}/>
       </div>
     </div>
 
     {/* Events Section */}
-    <div className={`bg-primary ${styles.flexStart}`}>
+    <div className={`${darkMode ? 'bg-primary' : 'bg-lightPrimary'} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <div className="w-full bg-primary py-10 px-4">
+        <div className={`w-full ${darkMode ? 'bg-primary' : 'bg-lightPrimary'} py-10 px-4`}>
           {events.map((event, index) => (
             <EventCard
               key={index}
@@ -68,12 +71,12 @@ const EventsPage = () => (
     </div>
 
     {/* Footer */}
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Footer />
+    <div className={`${darkMode ? 'bg-primary' : 'bg-lightPrimary'} ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Footer darkMode={darkMode}/>
+        </div>
       </div>
     </div>
-  </div>
-);
+)};
 
 export default EventsPage;

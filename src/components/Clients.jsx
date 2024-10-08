@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../style'
 import { clients } from '../constants'
 
-const Clients = () =>(
+const Clients = ({}) => (
   <section className={`${styles.flexCenter} my-4`}>
     <div className={`${styles.flexCenter} flex-wrap w-full`}>
       {clients.map((client)=>(
