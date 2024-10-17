@@ -134,25 +134,25 @@ const ContactForm = () => {
           <li className="flex items-center text-gray-400">
             <span className="mr-4">📍</span>
             <span>
-              <strong>Address:</strong> 198 West 21th Street, Suite 721 New York NY 10016
+              <strong>Address:</strong> 301, Amber Plaza, Sinhgad Institute Road, Ambegaon Bk, Katraj Pune, Maharashtra 411046, IN
             </span>
           </li>
           <li className="flex items-center text-gray-400">
             <span className="mr-4">📞</span>
             <span>
-              <strong>Phone:</strong> +1235 2355 98
+              <strong>Phone:</strong> 9923444362
             </span>
           </li>
           <li className="flex items-center text-gray-400">
             <span className="mr-4">✉️</span>
             <span>
-              <strong>Email:</strong> info@yoursite.com
+              <strong>Email:</strong> admin@svrrobotics.com
             </span>
           </li>
           <li className="flex items-center text-gray-400">
             <span className="mr-4">🌐</span>
             <span>
-              <strong>Website:</strong> www.yoursite.com
+              <strong>Website:</strong> www.svrrobotics.com
             </span>
           </li>
         </ul>

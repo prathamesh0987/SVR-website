@@ -18,7 +18,7 @@ const About = () => {
 
       <div className={`${darkMode ? 'bg-primary' : 'bg-lightPrimary'} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <h1 className={`flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] ${darkMode ? 'text-white' : 'text-black'} ss:leading-[100px] leading-[75px] text-center`}> Yes we are, SVR!</h1>
+          <h1 className={`flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] ${darkMode ? 'text-white' : 'text-'} ss:leading-[100px] leading-[75px] text-center`}> Yes we are, SVR!</h1>
           <div className="flex flex-wrap sm:justify-start justify-between w-full relative z-[1] items-center ">
             {about.map((card) => <AboutCard key={card.id} {...card} />)}
           </div>

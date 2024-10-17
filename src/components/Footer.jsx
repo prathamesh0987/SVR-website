@@ -29,8 +29,8 @@ const Footer = ({darkMode}) => (
                   className={`font-poppins font-normal text-[16px] leading-[24px]${darkMode ? ' text-dimWhite ' : ' text-lightDimWhite'} hover:text-secondary cursor-pointer ${
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
-                >
-                  {link.name}
+                ><a href={link.link} target="_blank" rel="noreferrer">{link.name}</a>
+                  
                 </li>
               ))}
             </ul>
@@ -42,7 +42,7 @@ const Footer = ({darkMode}) => (
     <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
       <p className={`font-poppins font-normal text-center text-[18px] leading-[27px] ${darkMode ? ' text-white' : ' text-black'}`}>
         Copyright Ⓒ 2024 SVRINFOTECH. All Rights Reserved. 
-        {/* &nbsp; Designed and Developed by Prathamesh Vagare.  */}
+        &nbsp; Designed and Developed by Prathamesh Vagare. 
       </p>
 
       <div className="flex flex-row md:mt-0 mt-6">

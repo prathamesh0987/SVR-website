@@ -12,6 +12,8 @@ import ProductPage from './pages/ProductPage.jsx';
 import ResearchPage from './pages/ResearchPage.jsx';
 import EventsPage from './pages/EventsPage.jsx';
 import ContactUs from './pages/ContactUs.jsx';
+import DownloadPage from './pages/DownloadPage.jsx';
+import ProductDetail from './pages/ProductDetail.jsx';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +44,18 @@ const router = createBrowserRouter([
     path: "contact us",
     element: <ContactUs/>,
   },
+  {
+    path: "contact us",
+    element: <ContactUs/>,
+  },
+  {
+    path: "downloads",
+    element: <DownloadPage/>,
+  },
+  {
+    path:"/products/:productId",
+     element:<ProductDetail />
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
